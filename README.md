@@ -14,16 +14,26 @@ The "Model View Presenter" design pattern and summarize as part of this section.
 MVP to MVC. (NOTE: Friday's quiz include questions on variable scope in Java)
 
 
-Team member roles in assignment: (Who did what)
+Team member roles in assignment: 
 
+We each worked collaboratively throughtout the activity.
 
-
-Key Lessons learned:
-
-Summarize what you think important teaching points from the lesson were.  Be sure to
+Key Lessons learned: Summarize what you think important teaching points from the lesson were.  Be sure to
 include something from each part (I-V)
 
+Part I:
 
+Part II:
+
+Part III:
+
+
+
+Activity Questions:
+
+#36:
+
+#37:
 
 Conclusion Questions
 
@@ -59,7 +69,5 @@ Tabs = refers to action bar tabs.
 Tabs+Swipe= refers to using view page in conjunction with action bar tabs
 Swipe View + Title Strip = refers to using a viewpager with a pagerTabStrip instead of actionbar tabs
 Dropdown = refers to using list navigation in the action bar
-
-(Answer these as the last part of your README.txt file)
 
 ===== README.txt ========
