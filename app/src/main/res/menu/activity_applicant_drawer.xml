@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!-- step 11 implemented in lines 9-11 below -->
+        <item
+            android:id="@+id/family_member"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Family Member" />
+        <!-- step 16 implemented in lines 13-16 below -->
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+<!-- step 10 removed tools, gallery, and slideshow -->
+    </group>
+
+    <!--steps 1-7 deleted code for communicate-->
+
+    </menu>
