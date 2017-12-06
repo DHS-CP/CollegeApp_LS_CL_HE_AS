@@ -36,9 +36,15 @@ As a responsible programmer, how could you create a trusted app that would prote
 
 Activity Questions:
 
-#36:
+#36: A navigation drawer is a good fit for the College App because it allows for the users to easily switch between different fragments of their apps without having to push a back button multiple times to get to the main screen. It acts as a shortcut that allows you to jump from one screen to another. 
 
-#37:
+#37: 
+
+Source1: https://material.io/guidelines/patterns/navigation-drawer.html# (This site has a clear description on what a navigation drawer is and the types of behaviors they could be designed to have)
+
+Source2:https://stablekernel.com/using-fragments-to-simplify-android-navigation-drawers/ (This site talks about how to use fragments to simplify your naviagtion drawer)
+
+Source3: https://www.uxpin.com/community/tutorials/navigation-drawers/ (This source teaches you how to build a navigation drawer)
 
 Conclusion Questions
 
