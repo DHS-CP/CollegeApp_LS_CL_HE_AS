@@ -66,7 +66,7 @@ content_applicant.xml
 
 
 How did you use inheritance in the College App?
-We used inheritance in the college app by extending from appcompat activity to Fragment.
+We used inheritance in the college app by extending ApplicantActivity.java from AppCompatActivity and the fragment classes from Fragment.
 
 
 
@@ -77,6 +77,7 @@ Using the google implementation would probably save more time then doing your ow
 
 Use the Internet or any other resource to help you find information about three other forms of navigation used within Android apps. Discuss the pros and cons of using each as a replacement for the navigation drawer in the College App.
 Tabs = refers to action bar tabs.
+
 Tabs+Swipe= refers to using view page in conjunction with action bar tabs
 Swipe View + Title Strip = refers to using a viewpager with a pagerTabStrip instead of actionbar tabs
 Dropdown = refers to using list navigation in the action bar
