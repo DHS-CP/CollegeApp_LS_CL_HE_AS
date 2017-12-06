@@ -7,27 +7,32 @@ Assignment: PLTW 2.1.4
 Date: (date submitted)
 Team Members: Camryn Lee, Latisha Sumardy, Arina Sobol, Hannah Edge
 
-Description:
-
-This assignment was a lesson in _________ (please summarize what you learned based on topics covered.  Please include a summary of the presentation on variable scope. Also, look up
+Description: (please summarize what you learned based on topics covered.  Please include a summary of the presentation on variable scope. Also, look up
 The "Model View Presenter" design pattern and summarize as part of this section.  Compare
 MVP to MVC. (NOTE: Friday's quiz include questions on variable scope in Java)
+
+This assignment was a lesson in app navigation. We learned how to create the basic foundation of the College App using Android Studio. A large part of the lesson focused on fragments of the app, and how each fragment contains a separate part such as user profile, or family member information. We also learned about variables, and the extent to which they can be used. Static variables and instance variables have a class level scope, meaning they can be used by all the methods within the class. Parameters and local variables are limited to the method they were written in.
+
+The  "Model View Presenter" is derived from the "Model View Controller" and it is a key factor when trying to design the user interface of an app. Each part has its own role. The model is made to analyze the data, view displays data reacts based upon user input, and presenter displays the data. MVP is different than MCP because MCP has a controller that controls what is going to be displayed in view. 
 
 
 Team member roles in assignment: 
 
 We each worked collaboratively throughtout the activity.
 
-Key Lessons learned: Summarize what you think important teaching points from the lesson were.  Be sure to
-include something from each part (I-V)
-
-Part I:
-
-Part II:
-
-Part III:
+Part I: This part was relatively simple, as we just went over the basics of starting the app, and how to use Android's Vector Asset Studio. We went over how to add and delete icons in the menu tab the importance of variable scope (explained in the summary above). 
 
 
+Part II: In this part, we learned how to organize our apps using fragments. The importance of using fragments, is it allows you to store different information onto different pages, instead of having everything jumbled into one. We learned that each fragment required its own class and xml file to manage all the data and functions of the buttons. 
+
+
+Part III: In this section, they emphasized the importance of protecting personal information from malicious users, and we all pledged to 'do the right thing.'
+
+
+In the app you are writing, what data could represent private information? : The app asks for profile information and information on family members. Anything personal about an individual is information that would require protection because it represents private inforamtion. 
+
+
+As a responsible programmer, how could you create a trusted app that would protect your users' privacy?: We could create an app that has encrypted accounts, so it would be difficult for malicious users to gain access to our users' personal information.
 
 Activity Questions:
 
