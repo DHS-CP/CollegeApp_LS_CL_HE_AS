@@ -85,8 +85,8 @@ public class ApplicantActivity extends AppCompatActivity
             contentFragment = new ProfileFragment();
 
         }
-        //steps 8 deleted code for communicate, which removed the button for communicate
-        //step 9: to remove a menu item from the navigation bar, remove all the text pertaining to the item in the xml file, and do the same in the java file.
+        //2.1.4 steps 8 deleted code for communicate, which removed the button for communicate
+        //2.1.4 step 9: to remove a menu item from the navigation bar, remove all the text pertaining to the item in the xml file, and do the same in the java file.
 
         if (contentFragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

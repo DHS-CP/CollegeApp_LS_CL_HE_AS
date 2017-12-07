@@ -4,7 +4,7 @@ package com.example.latisha.collegeapp;
  * Created by Latisha on 12/5/17.
  */
 
-//steps 31-32 implemented below
+//2.1.4 steps 31-32 implemented below
 public class Guardian {
     String firstName;
     String lastName;
