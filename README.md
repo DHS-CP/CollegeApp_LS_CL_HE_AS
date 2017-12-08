@@ -96,6 +96,5 @@ Why should Guardian and Sibling inherit from FamilyMember?
 Gaurdian and sibling  is inherited from family memeber because we needed the same code that is in family memeber and it was just eaiser to inherit from FamilyMember so we don't have to create more usueless classes.
 
 Why doesn't it make sense to instantiate FamilyMember?
-We created a specific class for Family Memeber that we could base off the rest of out code. The code goes from one section to the next which makes it eaiser to read.
-
+you instantiate a class to create a specific class that can also be an executable file you can run in a computer we don't need familymember to run on our computer file.
 ===== README.txt ========
