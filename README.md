@@ -82,4 +82,20 @@ Tabs+Swipe= refers to using view page in conjunction with action bar tabs
 Swipe View + Title Strip = refers to using a viewpager with a pagerTabStrip instead of actionbar tabs
 Dropdown = refers to using list navigation in the action bar
 
+2.1.5 Summary
+Part 1: Viewing the Model Data
+In part one we created a family member class which takes in your first and last name. We added getters and setters and updated the TextViews and EditTexts. Then we added a family memeber constructer.
+Part 2: User input:Text Fields
+We added a submit button onto the family memeber fragment which you could click on and it sends your submition. We also aadded a onclicklistener button.
+Part 3: Abstract Classes
+The next class we created was the sibling and guardian classes, family memeber was the superclass of the gairdian and sibling  classes.Declared that familymemeber was an abstract between public and class.
+Part 4: Date of birth picker
+The very last part of this assignment is basically showing which family memeber did what in high school/college. Showing what tests they took, random interesting facts about family memebers.
+
+Why should Guardian and Sibling inherit from FamilyMember?
+Gaurdian and sibling  is inherited from family memeber because we needed the same code that is in family memeber and it was just eaiser to inherit from FamilyMember so we don't have to create more usueless classes.
+
+Why doesn't it make sense to instantiate FamilyMember?
+We created a specific class for Family Memeber that we could base off the rest of out code. The code goes from one section to the next which makes it eaiser to read.
+
 ===== README.txt ========
