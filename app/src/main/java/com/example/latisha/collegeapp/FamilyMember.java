@@ -24,4 +24,12 @@ public class FamilyMember {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    //step 10 implemented in FamilyMember()
+    public FamilyMember() {
+        firstName="Ada";
+        lastName="Lovelace";
+
+    }
+
 }

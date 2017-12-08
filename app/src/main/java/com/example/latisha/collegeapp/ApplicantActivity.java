@@ -35,6 +35,8 @@ public class ApplicantActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        final TextView helloTextView = (TextView) findViewById(R.id.FamilyMember);
+        helloTextView.setText(R.string.user_greeting);
     }
 
     @Override

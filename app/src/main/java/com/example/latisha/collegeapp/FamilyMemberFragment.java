@@ -11,7 +11,9 @@ import android.view.ViewGroup;
  */
 
 public class FamilyMemberFragment extends Fragment {
+    /*private FamilyMember FamilyMember() {
 
+    }*/
     //2.1.4 steps 23-26 implemented in lines 16-20
     @Override
     public View onCreateView(LayoutInflater one, ViewGroup two , Bundle three) {
