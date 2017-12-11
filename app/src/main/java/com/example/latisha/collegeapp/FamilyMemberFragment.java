@@ -17,7 +17,7 @@ public class FamilyMemberFragment extends Fragment {
     TextView mFirstNameText;
     EditText eFirstNameEdit;
     TextView mLastNameText;
-    EditText eLastNameEdit;
+    EditText mLastNameEdit;
 
     //2.1.5 step 9 in line 23
     FamilyMember mMember=new FamilyMember();

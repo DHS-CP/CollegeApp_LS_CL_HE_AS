@@ -23,13 +23,13 @@
             android:text="Family Member Content" />
 
         <TextView
-            android:id="@+id/mFirstName"
+            android:id="@+id/FirstNameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/mLastName"
+            android:id="@+id/LastNameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
