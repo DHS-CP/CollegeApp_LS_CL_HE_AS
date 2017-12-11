@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.TextViewCompat;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class ApplicantActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -35,8 +37,7 @@ public class ApplicantActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        final TextView helloTextView = (TextView) findViewById(R.id.FamilyMember);
-        helloTextView.setText(R.string.user_greeting);
+
     }
 
     @Override
@@ -75,6 +76,9 @@ public class ApplicantActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment contentFragment = null;
+        //2.1.5 step 11
+        TextView mFirstName= (TextView) findViewById(R.id.mFirstName);
+        TextView mLastName= (TextView) findViewById(R.id.mLastName);
 
         // Handle navigation view item clicks here.
         int id = item.getItemId();

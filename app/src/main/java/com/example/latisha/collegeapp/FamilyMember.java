@@ -25,7 +25,7 @@ public class FamilyMember {
         this.lastName = lastName;
     }
 
-    //step 10 implemented in FamilyMember()
+    //2.1.5 step 10 implemented in FamilyMember()
     public FamilyMember() {
         firstName="Ada";
         lastName="Lovelace";

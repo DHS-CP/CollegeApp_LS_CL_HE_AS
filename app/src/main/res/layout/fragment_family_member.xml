@@ -11,9 +11,16 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteY="16dp"
 
         >
+
+
+        <TextView
+            android:id="@+id/FamilyMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family Member Content" />
 
         <TextView
             android:id="@+id/mFirstName"
@@ -21,25 +28,10 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
 
-        <EditText
-            android:id="@id/mFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/mLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
-
-        <EditText
-            android:id="@id/mLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/FamilyMember"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Family Member Content" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
