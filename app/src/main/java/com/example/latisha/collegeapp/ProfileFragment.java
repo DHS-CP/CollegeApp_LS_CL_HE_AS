@@ -15,6 +15,14 @@ import android.widget.Button;
  * Created by Latisha on 12/5/17.
  */
 //2.1.4 step 28 is this whole file
+public class ProfileFragment extends Fragment{
+
+    TextView mFirstName;
+    TextView mLastName;
+
+    //2.1.5 step 13 line 24
+    public Profile mPerson = new Profile();
+    
     public View onCreateView(LayoutInflater one, ViewGroup two , Bundle three) {
         super.onCreateView(one, two, three);
         View rootView = one.inflate(R.layout.fragment_profile, two, false);
