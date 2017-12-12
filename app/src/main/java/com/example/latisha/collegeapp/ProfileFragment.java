@@ -1,10 +1,13 @@
 package com.example.latisha.collegeapp;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * Created by Latisha on 12/5/17.
