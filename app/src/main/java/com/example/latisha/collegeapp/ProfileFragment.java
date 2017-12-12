@@ -38,8 +38,9 @@ public class ProfileFragment extends Fragment{
         //2.1.5 step 19 implemented in lines 36-54 below
         final EditText mFirstNameEdit = rootView.findViewById(R.id.FirstNameEdit);
         final EditText mLastNameEdit = rootView.findViewById(R.id.LastNameEdit);
+
         //2.1.6 step 26
-        final DatePicker dateEdit = rootView.findViewById(R.id.datePicker);
+        date = (DatePicker) rootView.findViewById(R.id.dateofbirthPicker);
 
         Button mSumbitButton = (Button) rootView.findViewById(R.id.mSubmitButton);
 

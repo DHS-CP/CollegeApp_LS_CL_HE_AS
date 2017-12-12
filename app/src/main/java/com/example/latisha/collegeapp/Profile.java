@@ -1,5 +1,7 @@
 package com.example.latisha.collegeapp;
 
+import java.util.Date;
+
 /**
  * Created by Latisha on 12/5/17.
  */
@@ -7,6 +9,7 @@ package com.example.latisha.collegeapp;
 public class Profile {
     String firstName;
     String lastName;
+    private int date;
 
     public String getFirstName() {
         return firstName;
@@ -28,6 +31,7 @@ public class Profile {
     public Profile() {
         firstName="Alan";
         lastName="Turing";
+        date = 20;
 
     }
 }
