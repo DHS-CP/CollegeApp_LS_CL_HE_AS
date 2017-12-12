@@ -77,17 +77,13 @@ public class ApplicantActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment contentFragment = null;
-        //2.1.5 step 11
-        TextView mFirstName= (TextView) findViewById(R.id.FirstNameText);
-        TextView mLastName= (TextView) findViewById(R.id.LastNameText);
 
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.family_member) {
             contentFragment = new FamilyMemberFragment();
-            mFirstName.setText();
-            mLastName.setText();
+
         }
         //step 16 in lines 87-89
         else if (id == R.id.profile){
