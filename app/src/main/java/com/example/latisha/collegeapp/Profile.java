@@ -23,4 +23,11 @@ public class Profile {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    
+    //2.1.5 step 12 implemented in lines 28-30 below
+    public Profile() {
+        firstName="Alan";
+        lastName="Turing";
+
+    }
 }
