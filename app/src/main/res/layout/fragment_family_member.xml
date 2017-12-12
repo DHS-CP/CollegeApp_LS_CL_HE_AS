@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
-        
+
           <EditText
             android:id="@+id/FirstNameEdit"
             android:layout_width="match_parent"
@@ -40,6 +40,25 @@
 
         <EditText
             android:id="@+id/LastNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/Occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occupation" />
+
+        <TextView
+            android:id="@+id/OccupationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/OccupationEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
