@@ -13,7 +13,13 @@ import android.widget.Button;
 /**
  * Created by Latisha on 12/4/17.
  */
-
+public class FamilyMemberFragment extends Fragment{
+    
+    TextView mFirstName;
+    TextView mLastName;
+    
+    //2.1.5 step 9
+    public FamilyMember mMember = new FamilyMember();
     public View onCreateView(LayoutInflater one, ViewGroup two , Bundle three) {
         super.onCreateView(one, two, three);
         View rootView = one.inflate(R.layout.fragment_family_member, two, false);
