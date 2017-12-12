@@ -8,4 +8,13 @@ package com.example.latisha.collegeapp;
 public class Guardian extends FamilyMember{
     //2.1.5 step 23 implemented in line 10 below
     private String occupation;
+    
+    //2.1.5 step 24 implemented in lines 13-19 below
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
 }
