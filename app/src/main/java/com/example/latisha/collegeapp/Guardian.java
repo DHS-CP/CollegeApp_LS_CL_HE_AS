@@ -4,24 +4,8 @@ package com.example.latisha.collegeapp;
  * Created by Latisha on 12/5/17.
  */
 
-//2.1.4 steps 31-32 implemented below
-public class Guardian {
-    String firstName;
-    String lastName;
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+//2.1.5 step 21 implemented in line 8 below
+public class Guardian extends FamilyMember{
+    //2.1.5 step 23 implemented in line 10 below
+    private String occupation;
 }
