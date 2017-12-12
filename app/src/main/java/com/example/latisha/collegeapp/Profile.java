@@ -39,7 +39,7 @@ public class Profile {
     public Profile() {
         firstName="Alan";
         lastName="Turing";
-        date = "December 12, 2017";
+        date = "01-12-2017";
 
     }
 }

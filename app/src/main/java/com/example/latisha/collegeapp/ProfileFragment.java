@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -41,7 +42,13 @@ public class ProfileFragment extends Fragment{
         final EditText mLastNameEdit = rootView.findViewById(R.id.LastNameEdit);
 
         //2.1.6 step 26
-        final DatePicker date = rootView.findViewById(R.id.dateofbirthPicker);
+        date = (DatePicker) rootView.findViewById(R.id.dateofbirthPicker);
+        int day = date.getDayOfMonth();
+        int month = date.getMonth() + 1;
+        int year = date.getYear();
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("MM-dd-yyyy");
+        Date d = new Date(year, month, day);
+        final String strDate = dateFormatter.format(d);
         final TextView mDateText = rootView.findViewById(R.id.DateText);
 
         Button mSumbitButton = (Button) rootView.findViewById(R.id.mSubmitButton);
@@ -50,6 +57,7 @@ public class ProfileFragment extends Fragment{
         mLastNameText.setText(mPerson.getLastName());
         mFirstNameEdit.setText(mPerson.getFirstName());
         mLastNameEdit.setText(mPerson.getLastName());
+        mDateText.setText(mPerson.getDate());
 
         mSumbitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +66,7 @@ public class ProfileFragment extends Fragment{
                 mPerson.setLastName(mLastNameEdit.getText().toString());
                 mFirstNameText.setText(mPerson.getFirstName());
                 mLastNameText.setText(mPerson.getLastName());
-                mDateText.setText(mPerson.getDate());
+                mDateText.setText(strDate);
 
             }
         });
