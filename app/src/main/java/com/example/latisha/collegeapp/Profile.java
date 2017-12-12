@@ -9,7 +9,7 @@ import java.util.Date;
 public class Profile {
     String firstName;
     String lastName;
-    private int date;
+    String date;
 
     public String getFirstName() {
         return firstName;
@@ -26,12 +26,20 @@ public class Profile {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     //2.1.5 step 12 implemented in lines 28-30 below
     public Profile() {
         firstName="Alan";
         lastName="Turing";
-        date = 20;
+        date = "December 12, 2017";
 
     }
 }
