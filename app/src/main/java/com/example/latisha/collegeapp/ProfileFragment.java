@@ -6,9 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
+
+import java.util.Date;
 
 
 /**
@@ -19,6 +22,7 @@ public class ProfileFragment extends Fragment{
 
     TextView mFirstName;
     TextView mLastName;
+    DatePicker date;
 
     //2.1.5 step 13 line 24
     public Profile mPerson = new Profile();
@@ -34,6 +38,8 @@ public class ProfileFragment extends Fragment{
         //2.1.5 step 19 implemented in lines 36-54 below
         final EditText mFirstNameEdit = rootView.findViewById(R.id.FirstNameEdit);
         final EditText mLastNameEdit = rootView.findViewById(R.id.LastNameEdit);
+        //2.1.6 step 26
+        final DatePicker dateEdit = rootView.findViewById(R.id.datePicker);
 
         Button mSumbitButton = (Button) rootView.findViewById(R.id.mSubmitButton);
 
