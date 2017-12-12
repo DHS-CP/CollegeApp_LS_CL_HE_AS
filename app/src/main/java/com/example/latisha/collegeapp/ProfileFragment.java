@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Button;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -40,16 +41,53 @@ public class ProfileFragment extends Fragment{
         //2.1.5 step 19 implemented in lines 36-54 below
         final EditText mFirstNameEdit = rootView.findViewById(R.id.FirstNameEdit);
         final EditText mLastNameEdit = rootView.findViewById(R.id.LastNameEdit);
+        //test
+        final Calendar c = Calendar.getInstance();
+
+        final int maxYear = c.get(Calendar.YEAR) - 20; // this year ( 2011 ) - 20 = 1991
+        final int maxMonth = c.get(Calendar.MONTH);
+        final int maxDay = c.get(Calendar.DAY_OF_MONTH);
+        final int minYear = 1960;
+        final int minMonth = 0; // january
+        final int minDay = 25;
+
 
         //2.1.6 step 26
         date = (DatePicker) rootView.findViewById(R.id.dateofbirthPicker);
+        /*date.init(maxYear - 10, maxMonth, maxDay, new DatePicker.OnDateChangedListener()
+        {
+
+            @Override
+            public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth)
+            {
+                if (year < minYear)
+                    view.updateDate(minYear, minMonth, minDay);
+
+                if (monthOfYear < minMonth && year == minYear)
+                    view.updateDate(minYear, minMonth, minDay);
+
+                if (dayOfMonth < minDay && year == minYear && monthOfYear == minMonth)
+                    view.updateDate(minYear, minMonth, minDay);
+
+
+                if (year > maxYear)
+                    view.updateDate(maxYear, maxMonth, maxDay);
+
+                if (monthOfYear > maxMonth && year == maxYear)
+                    view.updateDate(maxYear, maxMonth, maxDay);
+
+                if (dayOfMonth > maxDay && year == maxYear && monthOfYear == maxMonth)
+                    view.updateDate(maxYear, maxMonth, maxDay);
+            }}); // BirthDateDP.init()*/
         int day = date.getDayOfMonth();
         int month = date.getMonth() + 1;
         int year = date.getYear();
         SimpleDateFormat dateFormatter = new SimpleDateFormat("MM-dd-yyyy");
-        Date d = new Date(year, month, day);
+        final Date d = new Date(year - 1901, month, day);
         final String strDate = dateFormatter.format(d);
+
         final TextView mDateText = rootView.findViewById(R.id.DateText);
+
 
         Button mSumbitButton = (Button) rootView.findViewById(R.id.mSubmitButton);
 
