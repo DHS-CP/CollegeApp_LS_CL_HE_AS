@@ -13,7 +13,7 @@ import android.widget.Button;
 /**
  * Created by Latisha on 12/4/17.
  */
-public class FamilyMemberFragment extends Fragment{
+public class GuardianFragment extends Fragment{
     
     TextView mFirstName;
     TextView mLastName;
