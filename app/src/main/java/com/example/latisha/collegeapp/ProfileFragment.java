@@ -41,16 +41,7 @@ public class ProfileFragment extends Fragment{
         //2.1.5 step 19 implemented in lines 36-54 below
         final EditText mFirstNameEdit = rootView.findViewById(R.id.FirstNameEdit);
         final EditText mLastNameEdit = rootView.findViewById(R.id.LastNameEdit);
-        //test
-        final Calendar c = Calendar.getInstance();
-
-        final int maxYear = c.get(Calendar.YEAR) - 20; // this year ( 2011 ) - 20 = 1991
-        final int maxMonth = c.get(Calendar.MONTH);
-        final int maxDay = c.get(Calendar.DAY_OF_MONTH);
-        final int minYear = 1960;
-        final int minMonth = 0; // january
-        final int minDay = 25;
-
+  
 
         //2.1.6 step 26
         date = (DatePicker) rootView.findViewById(R.id.dateofbirthPicker);
