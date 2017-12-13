@@ -54,37 +54,7 @@ public class ProfileFragment extends Fragment{
 
         //2.1.6 step 26
         date = (DatePicker) rootView.findViewById(R.id.dateofbirthPicker);
-        /*date.init(maxYear - 10, maxMonth, maxDay, new DatePicker.OnDateChangedListener()
-        {
 
-            @Override
-            public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth)
-            {
-                if (year < minYear)
-                    view.updateDate(minYear, minMonth, minDay);
-
-                if (monthOfYear < minMonth && year == minYear)
-                    view.updateDate(minYear, minMonth, minDay);
-
-                if (dayOfMonth < minDay && year == minYear && monthOfYear == minMonth)
-                    view.updateDate(minYear, minMonth, minDay);
-
-
-                if (year > maxYear)
-                    view.updateDate(maxYear, maxMonth, maxDay);
-
-                if (monthOfYear > maxMonth && year == maxYear)
-                    view.updateDate(maxYear, maxMonth, maxDay);
-
-                if (dayOfMonth > maxDay && year == maxYear && monthOfYear == maxMonth)
-                    view.updateDate(maxYear, maxMonth, maxDay);
-            }}); // BirthDateDP.init()*/
-        int day = date.getDayOfMonth();
-        int month = date.getMonth() + 1;
-        int year = date.getYear();
-        SimpleDateFormat dateFormatter = new SimpleDateFormat("MM-dd-yyyy");
-        final Date d = new Date(year - 1901, month, day);
-        final String strDate = dateFormatter.format(d);
 
         final TextView mDateText = rootView.findViewById(R.id.DateText);
 
@@ -95,7 +65,8 @@ public class ProfileFragment extends Fragment{
         mLastNameText.setText(mPerson.getLastName());
         mFirstNameEdit.setText(mPerson.getFirstName());
         mLastNameEdit.setText(mPerson.getLastName());
-        mDateText.setText(mPerson.getDate());
+        mDateText.setText("mm-dd-yyyy");
+
 
         mSumbitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,6 +75,16 @@ public class ProfileFragment extends Fragment{
                 mPerson.setLastName(mLastNameEdit.getText().toString());
                 mFirstNameText.setText(mPerson.getFirstName());
                 mLastNameText.setText(mPerson.getLastName());
+
+                //2.1.6 step 26 in lines 80-88
+                int day = date.getDayOfMonth();
+                int month = date.getMonth();
+                int year = date.getYear();
+
+                SimpleDateFormat dateFormatter = new SimpleDateFormat("MM-dd-yyyy");
+                Date d = new Date(year-1900, month, day);
+                String strDate = dateFormatter.format(d);
+                mPerson.setDate(d);
                 mDateText.setText(strDate);
 
             }
